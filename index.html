@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reza Khaerul Rizky</title>
+</head>
+
+<body>
+    
+    <P> </P>
+    <form action="/action_page.php">
+        <h1 style="color:#39c1da;">Login dulu</h1>
+    <form id="loginForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="resultMessage"></p>
+
+        <marquee width="60%"
+        diriction="right" height="50px">11 rpl 2 anti gedor</marquee>
+        
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Tabel</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>my friends</h1>
+    <table>
+        <tr>
+            <th>nama</th>
+            <th>no hp</th>
+            <th>alamat</th>
+        </tr>
+        <tr>
+            <td>wowo</td>
+            <td>+62 838-3930-5034</td>
+            <td>jelupang</td>
+        </tr>
+        <tr>
+            <td>muhamad adli</td>
+            <td>+62 856-9211-0647</td>
+            <td>kp.ciater lengkong karya</td>
+        </tr>
+        <tr>
+            <td>wifqy</td>
+            <td>+62 895-2344-6938</td>
+            <td> lengkong</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farell Adrian X RPL 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #39c1da;
+            color: white;
+        }
+        td {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(odd) td {
+            background-color: #fff;
+        }
+        .first-name {
+            background-color: #e0f7fa;
+        }
+        .last-name {
+            background-color: #ffecb3;
+        }
+        .no-telepon {
+            background-color: #d1c4e9;
+        }
+        .alamat {
+            background-color: #d1c4e9;
+        }
+    </style>
+<script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById('firstName').value.trim(Reza);
+            const lastName = document.getElementById('lastName').value.trim(zaeza);
+            const resultMessage = document.getElementById('resultMessage');
+            const tableRows = document.querySelectorAll('#tableBody tr');
+            let nameFound = false;
+
+            if (firstName && lastName) {
+                tableRows.forEach(row => {
+                    const rowFirstName = row.querySelector('.first-name').textContent.toLowerCase();
+                    const rowLastName = row.querySelector('.last-name').textContent.toLowerCase();
+                    if (rowFirstName === firstName.toLowerCase() && rowLastName === lastName.toLowerCase()) {
+                        nameFound = true;
+                    }
+                });
+
+                if (nameFound) {
+                    resultMessage.textContent = 'Submit berhasil!';
+                    resultMessage.className = 'success';
+                    alert('Submit berhasil!');
+                } else {
+                    resultMessage.textContent = 'Nama tidak ditemukan di tabel.';
+                    resultMessage.className = 'error';
+                    alert('Nama tidak ditemukan di tabel.');
+                }
+            } else {
+                resultMessage.textContent = 'Submit gagal. Silakan isi semua field.';
+                resultMessage.className = 'error';
+                alert('Submit gagal. Silakan isi semua field.');
+            }
+        });
+    </script>
+</body>
+</html>
